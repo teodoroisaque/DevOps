@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+
+  web:
+    image: isaqueteodoro/esx:latest
+    container_name: esx_teste
+    deploy:
+      replicas: 1
+      placement:
+          constraints:
+            - node.labels.esx == true
