@@ -1,0 +1,6 @@
+---
+- hosts: esx
+  roles:
+    #- add_key_ssh
+    #- install_ngix
+    - install_docker

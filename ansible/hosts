@@ -1,0 +1,5 @@
+[esx]
+
+<IP-SERVER> ansible_ssh_private_key_file=<PATH>.ssh/id_rsa.pub
+<IP-SERVER> ansible_ssh_private_key_file=<PATH>/.ssh/id_rsa.pub
+<IP-SERVER> ansible_ssh_private_key_file=<PATH>/.ssh/id_rsa.pub
