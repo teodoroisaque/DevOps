@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-quiteja-ohio"
+    bucket         = "terraform-quiteja-ohio"
     dynamodb_table = "terrafom-state-lock-dynamo"
-    key    = "terraform-test.tfstate"
-    region = "us-east-2"
+    key            = "terraform-test.tfstate"
+    region         = "us-east-2"
   }
 }
 
