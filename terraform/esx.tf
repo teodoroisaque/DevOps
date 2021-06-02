@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-quiteja-ohio"
-    #dynamodb_table = "terrafom-state-lock-dynamo"
-    key    = "terraform-test.tfstate"
-    region = "us-east-2"
+    bucket         = "terraform-quiteja-ohio"
+    dynamodb_table = "terrafom-state-lock-dynamo"
+    key            = "terraform-test.tfstate"
+    region         = "us-east-2"
   }
 }
 
@@ -39,7 +39,7 @@ module "vpc" {
 
 module "ec2-private-a" {
   source                 = "./modules/ec2"
-  number_servers         = 0
+  number_servers         = 1
   ami                    = data.aws_ami.ubuntu.id
   infra_env              = "staging"
   instance_type          = "t2.micro"
