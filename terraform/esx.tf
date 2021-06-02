@@ -103,7 +103,7 @@ module "ec2-public-a" {
 
 module "ec2-public-b" {
   source                 = "./modules/ec2"
-  number_servers         = 1
+  number_servers         = 0
   ami                    = data.aws_ami.ubuntu.id
   infra_env              = "staging"
   instance_type          = "t2.micro"
