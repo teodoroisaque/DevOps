@@ -87,7 +87,7 @@ module "ec2-private-c" {
 
 module "ec2-public-a" {
   source                 = "./modules/ec2"
-  number_servers         = 0
+  number_servers         = 1
   ami                    = data.aws_ami.ubuntu.id
   infra_env              = "staging"
   instance_type          = "t2.micro"
@@ -103,7 +103,7 @@ module "ec2-public-a" {
 
 module "ec2-public-b" {
   source                 = "./modules/ec2"
-  number_servers         = 0
+  number_servers         = 1
   ami                    = data.aws_ami.ubuntu.id
   infra_env              = "staging"
   instance_type          = "t2.micro"
@@ -119,7 +119,7 @@ module "ec2-public-b" {
 
 module "ec2-public-c" {
   source                 = "./modules/ec2"
-  number_servers         = 0
+  number_servers         = 1
   ami                    = data.aws_ami.ubuntu.id
   infra_env              = "staging"
   instance_type          = "t2.micro"
