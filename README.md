@@ -87,7 +87,6 @@ Segue evidência do envio do alerta.
 
 # CONCLUSÃO
 
-- Eu utilizaria instâncias reservadas da aws para reduzir custos (No upfront ou Upfront) dependendo do budget diponível, utilizaria também se possível o data center da Virgina, pois toda inovação da AWS é primeiramente disponibilizada nesse data center, depois migram para os outros, pensei em uma arquitetura resiliente, escalável e tolerante a falhas com alta disponibilidade (3 AZS), uma arquitetura modular onde é possível trabalhar com micro serviços em containers, utilizei o docker swarm, mas poderiamos utilizar também o Kubernetes o importante é utilizarmos cluster.
-
+- Eu utilizaria instâncias reservadas da aws para reduzir custos (No upfront ou Upfront) dependendo do budget diponível, utilizaria também se possível o data center da Virgina, pois toda inovação da AWS é primeiramente disponibilizada nesse data center, depois migram para os outros, pensei em uma arquitetura resiliente, escalável e tolerante a falhas com alta disponibilidade (3 AZS), uma arquitetura modular onde é possível trabalhar com micro serviços em containers, utilizei o docker swarm, mas poderiamos utilizar também o Kubernetes o importante é utilizarmos cluster, para acesso as subnets privadas é imporante uma vpn site to site, ou um bastion host em uma subnet publica, com a vpn o acesso fica muito mais fácil.
 
 
