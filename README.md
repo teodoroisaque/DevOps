@@ -98,6 +98,10 @@ Segue evidência do envio do alerta.
 
 - Como sugerido, se fizermos a atualização do Jinja2 para a versão 2.11.3, não teremos mais essa vulnerabilidade média em nosso ambiente.
 
+'''
+https://github.com/teodoroisaque/DevOps/blob/master/esx_app/requirements.txt#L5
+'''
+
 
 # CONCLUSÃO
 
