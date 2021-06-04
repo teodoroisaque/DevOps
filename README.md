@@ -85,8 +85,21 @@ Segue evidência do envio do alerta.
 
 - No alerta é possível ver rapidamente o um problema ou o recovery da trigger, o tempo de downtime e a severidade da problema.
 
+
+## VULNERABILIDADES
+
+- Segue uma análise de vulnerabilidades que realizei em algumas imagens para exemplificar e evidenciar a escolha do alpine, na imagem criada temos apenas 1 vulnerabilidade média, já em outras imagens teriamos mais de 40 vulnerabilidades, baixas, médias e altas.
+
+![ev_images1](https://user-images.githubusercontent.com/42479203/120828597-16b69300-c533-11eb-9378-4c9aa829704e.png)
+
+- A seguir segue o detalhamento da vulnerabilidade encontrada na imagem criada.
+
+![ev_images_2](https://user-images.githubusercontent.com/42479203/120828701-377ee880-c533-11eb-932d-41424cf25331.png)
+
+- Como sugerido, se fizermos a atualização do Jinja2 para a versão 2.11.3, não teremos mais essa vulnerabilidade média em nosso ambiente.
+
+
 # CONCLUSÃO
 
 - Eu utilizaria instâncias reservadas da aws para reduzir custos (No upfront ou Upfront) dependendo do budget diponível, utilizaria também se possível o data center da Virgina, pois toda inovação da AWS é primeiramente disponibilizada nesse data center, depois migram para os outros, pensei em uma arquitetura resiliente, escalável e tolerante a falhas com alta disponibilidade (3 AZS), uma arquitetura modular onde é possível trabalhar com micro serviços em containers, utilizei o docker swarm, mas poderiamos utilizar também o Kubernetes o importante é utilizarmos cluster, para acesso as subnets privadas é imporante uma vpn site to site, ou um bastion host em uma subnet publica, com a vpn o acesso fica muito mais fácil.
-
 
